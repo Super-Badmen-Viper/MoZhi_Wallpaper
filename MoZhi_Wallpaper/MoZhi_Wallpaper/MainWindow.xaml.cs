@@ -23,6 +23,83 @@ namespace MoZhi_Wallpaper
         public MainWindow()
         {
             InitializeComponent();
+
+            Window_Loaded();
         }
+
+        /// <summary>
+        /// 拖动窗口
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                this.DragMove();
+            }
+            catch { }
+        }
+
+        /// <summary>
+        /// 窗体初始化
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Window_Loaded()
+        {
+            thickness_Grid_1_Normal = Grid_1.Margin;
+            thickness_Grid_2_Normal = Grid_2.Margin;
+            thickness_Grid_3_Normal = Grid_3.Margin;
+            thickness_Grid_1_Small = Grid_1.Margin;
+            thickness_Grid_2_Small = Grid_2.Margin;
+            thickness_Grid_3_Small = Grid_3.Margin;
+            thickness_Grid_1_Normal.Right = 294;
+            thickness_Grid_2_Normal.Right = 294;
+            thickness_Grid_3_Normal.Right = 294;
+        }
+
+        Thickness thickness_Grid_1_Small = new Thickness();
+        Thickness thickness_Grid_2_Small = new Thickness();
+        Thickness thickness_Grid_3_Small = new Thickness();
+        Thickness thickness_Grid_1_Normal = new Thickness();
+        Thickness thickness_Grid_2_Normal = new Thickness();
+        Thickness thickness_Grid_3_Normal = new Thickness();
+        /// <summary>
+        /// 窗体大小变化事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (this.Width < 1050)
+            {
+                Grid_1.Margin = thickness_Grid_1_Small;
+                Grid_2.Margin = thickness_Grid_2_Small;
+                Grid_3.Margin = thickness_Grid_3_Small;
+                Grid_5.Width = 200;
+
+                
+            }
+            else
+            {
+                Grid_1.Margin = thickness_Grid_1_Normal;
+                Grid_2.Margin = thickness_Grid_2_Normal;
+                Grid_3.Margin = thickness_Grid_3_Normal;
+                Grid_5.Width = 300;
+            }
+        }
+        /// <summary>
+        /// 应用关闭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            //关闭桌面写真
+            
+        }
+
+        
     }
 }
