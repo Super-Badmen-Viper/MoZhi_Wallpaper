@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoZhi_Wallpaper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="556" Width="736"
+        Title="MainWindow" Height="778" Width="1175"
         MinHeight="556" MinWidth="736"
         Background="{x:Null}"
         UseLayoutRounding="True" SnapsToDevicePixels="True" RenderOptions.BitmapScalingMode="HighQuality" 
@@ -32,28 +32,30 @@
         </Grid>
         <!--边框-->
         <Border BorderThickness="1,1,1,1" CornerRadius="6,6,6,6"
-                BorderBrush="#FFD8D8D8" Background="#FFD8D8D8">
+                BorderBrush="#383838" Background="#222222">
 
         </Border>
 
-        <Grid Margin="10" Background="#FFF6F6F6">
+        <Grid Margin="10" Background="#222222">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Text="MoZhi_Wallpaper_v1.0.1 Github版" Foreground="#FFEEEEE1"/>
+
             <Grid x:Name="Grid_1" 
-                  MinWidth="500" MinHeight="150" Height="150" VerticalAlignment="Top" 
-                  Margin="7,20,209,0" Background="#FFFD00FF" />
+                  MinWidth="500" MinHeight="70" Height="70" VerticalAlignment="Top" 
+                  Margin="7,20,330,0" Background="#FFFD00FF" />
             <Grid x:Name="Grid_2" 
                 MinWidth="500" MinHeight="182" Background="Black" 
-                Margin="7,178.5,209,175.5"/>
+                Margin="7,95,330,85"/>
             <Grid x:Name="Grid_3"  
-                MinWidth="500" MinHeight="112" Height="88" VerticalAlignment="Bottom" 
-                Margin="7,0,209,50" Background="#FF00FFA7" />
+                MinWidth="500" MinHeight="30" Height="30" VerticalAlignment="Bottom" 
+                Margin="7,0,330,45" Background="#FF00FFA7" />
             <Grid x:Name="Grid_4" 
                 MinWidth="300" MinHeight="26" Width="300" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="7,0,0,8" Background="#FFF1FF00" >
                 
             </Grid>
 
             <Grid x:Name="Grid_5"
-                MinWidth="200" MaxWidth="285" MinHeight="520"
-                HorizontalAlignment="Right" Background="Red" Width="200" Margin="0,20,0,14"/>
+                MinWidth="300" MaxWidth="285" MinHeight="520"
+                HorizontalAlignment="Right" Background="Red" Width="300" Margin="0,20,0,14"/>
         </Grid>
         
         

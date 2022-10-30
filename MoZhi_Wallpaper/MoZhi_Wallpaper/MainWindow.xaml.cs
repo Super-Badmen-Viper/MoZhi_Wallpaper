@@ -54,9 +54,9 @@ namespace MoZhi_Wallpaper
             thickness_Grid_1_Small = Grid_1.Margin;
             thickness_Grid_2_Small = Grid_2.Margin;
             thickness_Grid_3_Small = Grid_3.Margin;
-            thickness_Grid_1_Normal.Right = 294;
-            thickness_Grid_2_Normal.Right = 294;
-            thickness_Grid_3_Normal.Right = 294;
+            thickness_Grid_1_Normal.Right = 330;
+            thickness_Grid_2_Normal.Right = 330;
+            thickness_Grid_3_Normal.Right = 330;
         }
 
         Thickness thickness_Grid_1_Small = new Thickness();
@@ -72,22 +72,9 @@ namespace MoZhi_Wallpaper
         /// <param name="e"></param>
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            if (this.Width < 1050)
-            {
-                Grid_1.Margin = thickness_Grid_1_Small;
-                Grid_2.Margin = thickness_Grid_2_Small;
-                Grid_3.Margin = thickness_Grid_3_Small;
-                Grid_5.Width = 200;
-
-                
-            }
-            else
-            {
-                Grid_1.Margin = thickness_Grid_1_Normal;
-                Grid_2.Margin = thickness_Grid_2_Normal;
-                Grid_3.Margin = thickness_Grid_3_Normal;
-                Grid_5.Width = 300;
-            }
+            Grid_1.Margin = thickness_Grid_1_Normal;
+            Grid_2.Margin = thickness_Grid_2_Normal;
+            Grid_3.Margin = thickness_Grid_3_Normal;
         }
         /// <summary>
         /// 应用关闭
