@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="MoZhi_Wallpaper.UserControlLibrary.UserControl_Grid_Panel_Top_Right_Buttons.Button_Exit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MoZhi_Wallpaper.UserControlLibrary.UserControl_Grid_Panel_Top_Right_Buttons"
+             mc:Ignorable="d" 
+             d:DesignHeight="26" d:DesignWidth="40"
+             UseLayoutRounding="True" SnapsToDevicePixels="True" RenderOptions.BitmapScalingMode="HighQuality" 
+             MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave"
+             >
+    <Grid>
+        <Border 
+            x:Name="Border_Hover_BackGround" CornerRadius="0,6,0,0"
+            HorizontalAlignment="Right" VerticalAlignment="Top" 
+            Width="40" Height="26"     
+                >
+            <Button 
+                    Style="{StaticResource MyButton}"
+                    HorizontalAlignment="Right" VerticalAlignment="Top" 
+                        Height="16" Width="16" Margin="0,5,10,0" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/MoZhi_Wallpaper;component/ico_ui_library/关闭 (1).png"/>
+                </Button.Background>
+            </Button>
+        </Border>
+    </Grid>
+</UserControl>

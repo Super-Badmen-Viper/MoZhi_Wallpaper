@@ -48,10 +48,10 @@ namespace MoZhi_Wallpaper
         /// <param name="e"></param>
         private void Window_Loaded()
         {
-            thickness_Grid_1_Normal = Grid_1.Margin;
+            thickness_Grid_1_Normal = Grid_Panel_Select_Wallpaper_View.Margin;
             thickness_Grid_2_Normal = Grid_2.Margin;
             thickness_Grid_3_Normal = Grid_3.Margin;
-            thickness_Grid_1_Small = Grid_1.Margin;
+            thickness_Grid_1_Small = Grid_Panel_Select_Wallpaper_View.Margin;
             thickness_Grid_2_Small = Grid_2.Margin;
             thickness_Grid_3_Small = Grid_3.Margin;
             thickness_Grid_1_Normal.Right = 330;
@@ -72,7 +72,7 @@ namespace MoZhi_Wallpaper
         /// <param name="e"></param>
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            Grid_1.Margin = thickness_Grid_1_Normal;
+            Grid_Panel_Select_Wallpaper_View.Margin = thickness_Grid_1_Normal;
             Grid_2.Margin = thickness_Grid_2_Normal;
             Grid_3.Margin = thickness_Grid_3_Normal;
         }
